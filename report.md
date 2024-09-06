@@ -70,6 +70,7 @@ print("Principal Diagnosis Codes Frequency:\n", pricipal_dgns_frequency) `
   - Very new to coding so lots of copying and pasting error
   - Trying to stay consistent with naming data is a bit of a headache and also looking up what the codes meant
   - Trying to understand when an error occured, luckily the AI on Google colab helped a bit
+  - Not quite sure what the message after `print(data.head())` is trying to tell me
 
 ### Implications
   -  Z733 being the most common diagnoses among inpatient population suggests that lifestyle or behavior-related issues is a health concern. This is important for policymakers and heatlhcare providers to perhaps focus on lifestyle or behaviors of patients such as social determinants of health, patient education,and prevention.
