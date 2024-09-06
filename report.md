@@ -25,7 +25,11 @@
 
   `print(data.head()) `
 
-  - To identify columns related to medical codexes:
+  - To see a the header of the columns in an easier way:
+    ` for i in data.columns:
+      print(i) `
+    
+  -  To identify columns related to medical codexes:
  
 `pricipal_dgns = data['PRNCPAL_DGNS_CD']`
 
