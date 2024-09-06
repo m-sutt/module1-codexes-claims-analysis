@@ -63,7 +63,17 @@ print("Principal Diagnosis Codes Frequency:\n", pricipal_dgns_frequency) `
   - Z7682 is the most common for admitting dianosis which is for organ transplant
   - W86 is the most common external cause code which is the exposure to eletric currents
   - CLM_DRG_CD 10.0 is the most common among patients with Type 2 diabetes
-  - 
+
+
+### Challenges 
+
+  - Very new to coding so lots of copying and pasting error
+  - Trying to stay consistent with naming data is a bit of a headache and also looking up what the codes meant
+  - Trying to understand when an error occured, luckily the AI on Google colab helped a bit
+
+### Implications
+  -  Z733 being the most common diagnoses among inpatient population suggests that lifestyle or behavior-related issues is a health concern. This is important for policymakers and heatlhcare providers to perhaps focus on lifestyle or behaviors of patients such as social determinants of health, patient education,and prevention.
+    - Understanding most frequent diagnosis can help policymakers focus on the right areas.
 
 
 
