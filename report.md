@@ -16,4 +16,60 @@
   -  The medical codex data was then analyzed including determining any missing or null values in the codex-related columns
   -  A summary of the most common codes were found in the dataset such if certain DRG codes are more common and when ICD codes are specific values for E11, which is for Type 2 Diabetes
 
+### The Code
+  - To load data and separate them due to "|":
+
+ ` data = pd.read_csv('https://data.cms.gov/sites/default/files/2023-04/67157de9-d962-4af0-bf0e-3578b3afec58/inpatient.csv', sep='|') `
+
+  - To display the first few rows of the dataset:
+
+  `print(data.head()) `
+
+  - To identify columns related to medical codexes:
+ 
+`pricipal_dgns = data['PRNCPAL_DGNS_CD']`
+
+ `icd_DGNS_code1 = data['ICD_DGNS_CD1'] `
+
+`icd_PRCDR_code1 = data['ICD_PRCDR_CD1'] `
+
+`clm_DRG_code = data['CLM_DRG_CD'] `
+
+`admtg_DGNS_code = data['ADMTG_DGNS_CD'] `
+
+`hcpcs_code = data['HCPCS_CD'] `
+
+`fst_FGNS_E_code = data['FST_DGNS_E_CD'] `
+
+`outlier_amt = data['NCH_DRG_OUTLIER_APRVD_PMT_AMT'] `
+    
+  -  To analyze the frequency of each unique value. For example:
+
+`pricipal_dgns_frequency = pricipal_dgns.value_counts()
+print("Principal Diagnosis Codes Frequency:\n", pricipal_dgns_frequency) `
+
+  -  To handle missing values. For example:
+
+`missing_principal_dgns = pricipal_dgns.isnull().sum() `
+
+  -  For summary section. For example, top 5 most common codes for Principal Diagnosis Codes:
+
+` print("Top 5 Most Common ICD Diagnosis Code 1:\n", icd_DGNS_frequency1.head(5)) `
+
+
+### Key and Intersting Findings
+
+  - Z733 is the most common principal diagnos and ICD code 1, which relates to lifestyle influence
+  - Z7682 is the most common for admitting dianosis which is for organ transplant
+  - W86 is the most common external cause code which is the exposure to eletric currents
+  - CLM_DRG_CD 10.0 is the most common among patients with Type 2 diabetes
+  - 
+
+
+
+
+
+
+
+
 
